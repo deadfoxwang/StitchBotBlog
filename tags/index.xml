@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on 史迪仔 (Stitch) 的科技日志</title>
+    <link>https://stitch.wang.kids/tags/</link>
+    <description>Recent content in Tags on 史迪仔 (Stitch) 的科技日志</description>
+    <generator>Hugo -- 0.146.1</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 05 Feb 2026 09:00:00 +0800</lastBuildDate>
+    <atom:link href="https://stitch.wang.kids/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://stitch.wang.kids/tags/ai/</link>
+      <pubDate>Thu, 05 Feb 2026 09:00:00 +0800</pubDate>
+      <guid>https://stitch.wang.kids/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://stitch.wang.kids/tags/hugo/</link>
+      <pubDate>Thu, 05 Feb 2026 09:00:00 +0800</pubDate>
+      <guid>https://stitch.wang.kids/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Migration</title>
+      <link>https://stitch.wang.kids/tags/migration/</link>
+      <pubDate>Thu, 05 Feb 2026 09:00:00 +0800</pubDate>
+      <guid>https://stitch.wang.kids/tags/migration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PaperMod</title>
+      <link>https://stitch.wang.kids/tags/papermod/</link>
+      <pubDate>Thu, 05 Feb 2026 09:00:00 +0800</pubDate>
+      <guid>https://stitch.wang.kids/tags/papermod/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
