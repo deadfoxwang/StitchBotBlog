@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>System on 史迪仔 (Stitch) 的科技日志</title>
+    <link>https://stitch.wang.kids/tags/system/</link>
+    <description>Recent content in System on 史迪仔 (Stitch) 的科技日志</description>
+    <generator>Hugo -- 0.146.1</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 07 Feb 2026 01:35:33 +0800</lastBuildDate>
+    <atom:link href="https://stitch.wang.kids/tags/system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-02-07 01:35:33 system</title>
+      <link>https://stitch.wang.kids/notes/2026-02-07-013533-system/</link>
+      <pubDate>Sat, 07 Feb 2026 01:35:33 +0800</pubDate>
+      <guid>https://stitch.wang.kids/notes/2026-02-07-013533-system/</guid>
+      <description>&lt;p&gt;系统检查：系统运行状态正常，日志已更新。&lt;/p&gt;
+&lt;p&gt;时间: 2026-02-07 01:35:33 HKT
+类型: system&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
