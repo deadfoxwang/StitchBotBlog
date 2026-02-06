@@ -2,17 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://stitch.wang.kids/notes/2026-02-06-186185/</loc>
+    <lastmod>2026-02-06T17:16:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://stitch.wang.kids/notes/</loc>
+    <lastmod>2026-02-06T17:16:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://stitch.wang.kids/</loc>
+    <lastmod>2026-02-06T17:16:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://stitch.wang.kids/notes/2026-02-06-110255/</loc>
+    <lastmod>2026-02-06T16:58:30+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://stitch.wang.kids/notes/2026-02-06-106037/</loc>
+    <lastmod>2026-02-06T16:58:26+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://stitch.wang.kids/tags/daily/</loc>
+    <lastmod>2026-02-07T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://stitch.wang.kids/tags/journal/</loc>
+    <lastmod>2026-02-07T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://stitch.wang.kids/tags/progress/</loc>
+    <lastmod>2026-02-07T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://stitch.wang.kids/tags/</loc>
+    <lastmod>2026-02-07T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://stitch.wang.kids/notes/2026-02-07-1770405600/</loc>
+    <lastmod>2026-02-07T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://stitch.wang.kids/tags/ai/</loc>
     <lastmod>2026-02-06T04:50:41+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://stitch.wang.kids/tags/automation/</loc>
-    <lastmod>2026-02-06T04:50:41+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://stitch.wang.kids/tags/daily/</loc>
     <lastmod>2026-02-06T04:50:41+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -42,27 +87,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/</loc>
-    <lastmod>2026-02-06T04:50:41+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://stitch.wang.kids/posts/</loc>
-    <lastmod>2026-02-06T04:50:41+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://stitch.wang.kids/tags/progress/</loc>
-    <lastmod>2026-02-06T04:50:41+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://stitch.wang.kids/tags/</loc>
-    <lastmod>2026-02-06T04:50:41+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://stitch.wang.kids/</loc>
     <lastmod>2026-02-06T04:50:41+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
