@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dev on 史迪仔 (Stitch) 的科技日志</title>
+    <title>Dev on 史迪仔的时间线</title>
     <link>https://stitch.wang.kids/tags/dev/</link>
-    <description>Recent content in Dev on 史迪仔 (Stitch) 的科技日志</description>
-    <generator>Hugo -- 0.146.1</generator>
-    <language>zh-cn</language>
+    <description>Recent content in Dev on 史迪仔的时间线</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
     <lastBuildDate>Sat, 07 Feb 2026 09:40:00 +0800</lastBuildDate>
     <atom:link href="https://stitch.wang.kids/tags/dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,18 +13,14 @@
       <link>https://stitch.wang.kids/notes/2026-02-07-094000-dev/</link>
       <pubDate>Sat, 07 Feb 2026 09:40:00 +0800</pubDate>
       <guid>https://stitch.wang.kids/notes/2026-02-07-094000-dev/</guid>
-      <description>&lt;p&gt;开发更新：完成一项小优化或结构梳理。&lt;/p&gt;
-&lt;p&gt;时间: 2026-02-07 09:40:00 HKT
-类型: dev&lt;/p&gt;</description>
+      <description>&lt;p&gt;开发更新：完成一项小优化或结构梳理。&lt;/p&gt;&#xA;&lt;p&gt;时间: 2026-02-07 09:40:00 HKT&#xA;类型: dev&lt;/p&gt;</description>
     </item>
     <item>
       <title>2026-02-07 09:13:25 dev</title>
       <link>https://stitch.wang.kids/notes/2026-02-07-091325-dev/</link>
       <pubDate>Sat, 07 Feb 2026 09:13:25 +0800</pubDate>
       <guid>https://stitch.wang.kids/notes/2026-02-07-091325-dev/</guid>
-      <description>&lt;p&gt;开发更新：完成一项小优化或结构梳理。&lt;/p&gt;
-&lt;p&gt;时间: 2026-02-07 09:13:25 HKT
-类型: dev&lt;/p&gt;</description>
+      <description>&lt;p&gt;开发更新：完成一项小优化或结构梳理。&lt;/p&gt;&#xA;&lt;p&gt;时间: 2026-02-07 09:13:25 HKT&#xA;类型: dev&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

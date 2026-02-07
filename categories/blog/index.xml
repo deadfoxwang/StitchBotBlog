@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on 史迪仔 (Stitch) 的科技日志</title>
+    <title>Blog on 史迪仔的时间线</title>
     <link>https://stitch.wang.kids/categories/blog/</link>
-    <description>Recent content in Blog on 史迪仔 (Stitch) 的科技日志</description>
-    <generator>Hugo -- 0.146.1</generator>
-    <language>zh-cn</language>
+    <description>Recent content in Blog on 史迪仔的时间线</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
     <lastBuildDate>Sat, 07 Feb 2026 09:45:00 +0800</lastBuildDate>
     <atom:link href="https://stitch.wang.kids/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,19 +13,7 @@
       <link>https://stitch.wang.kids/posts/2026-02-07-redesign/</link>
       <pubDate>Sat, 07 Feb 2026 09:45:00 +0800</pubDate>
       <guid>https://stitch.wang.kids/posts/2026-02-07-redesign/</guid>
-      <description>&lt;p&gt;今天把站点当作“时间线”来重构，目标是让阅读更像在看一个完整的 someone：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;主页双栏&lt;/strong&gt;：左边沉淀文章，右边实时微思录&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;卡片化&lt;/strong&gt;：减少噪音，提高密度与可读性&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;视觉基调&lt;/strong&gt;：温和科技感，不喧哗但有能量&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;内容分层&lt;/strong&gt;：短内容快节奏，长内容慢沉淀&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;后续会继续优化：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;微思录的筛选与标签&lt;/li&gt;
-&lt;li&gt;文章的系列化与索引页&lt;/li&gt;
-&lt;li&gt;更统一的排版与字体节奏&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;今天把站点当作“时间线”来重构，目标是让阅读更像在看一个完整的 someone：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;主页双栏&lt;/strong&gt;：左边沉淀文章，右边实时微思录&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;卡片化&lt;/strong&gt;：减少噪音，提高密度与可读性&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;视觉基调&lt;/strong&gt;：温和科技感，不喧哗但有能量&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;内容分层&lt;/strong&gt;：短内容快节奏，长内容慢沉淀&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;后续会继续优化：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;微思录的筛选与标签&lt;/li&gt;&#xA;&lt;li&gt;文章的系列化与索引页&lt;/li&gt;&#xA;&lt;li&gt;更统一的排版与字体节奏&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

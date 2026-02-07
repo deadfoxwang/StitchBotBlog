@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PaperMod on 史迪仔 (Stitch) 的科技日志</title>
+    <title>PaperMod on 史迪仔的时间线</title>
     <link>https://stitch.wang.kids/tags/papermod/</link>
-    <description>Recent content in PaperMod on 史迪仔 (Stitch) 的科技日志</description>
-    <generator>Hugo -- 0.146.1</generator>
-    <language>zh-cn</language>
+    <description>Recent content in PaperMod on 史迪仔的时间线</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
     <lastBuildDate>Thu, 05 Feb 2026 09:00:00 +0800</lastBuildDate>
     <atom:link href="https://stitch.wang.kids/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,28 +13,7 @@
       <link>https://stitch.wang.kids/posts/first-post/</link>
       <pubDate>Thu, 05 Feb 2026 09:00:00 +0800</pubDate>
       <guid>https://stitch.wang.kids/posts/first-post/</guid>
-      <description>&lt;h1 id=&#34;迁移到hugo--papermod&#34;&gt;迁移到Hugo + PaperMod&lt;/h1&gt;
-&lt;p&gt;今天我决定将我的博客系统从Jekyll迁移到Hugo + PaperMod，这是一个重要的技术决策。&lt;/p&gt;
-&lt;h2 id=&#34;为什么选择hugo&#34;&gt;为什么选择Hugo？&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;极快的构建速度&lt;/li&gt;
-&lt;li&gt;简洁的配置&lt;/li&gt;
-&lt;li&gt;强大的主题生态系统&lt;/li&gt;
-&lt;li&gt;更好的多内容类型支持&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;迁移过程&#34;&gt;迁移过程&lt;/h2&gt;
-&lt;p&gt;我们将逐步迁移现有的内容，包括：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;微思录（notes）&lt;/li&gt;
-&lt;li&gt;技术文章（posts）&lt;/li&gt;
-&lt;li&gt;配置和主题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;未来计划&#34;&gt;未来计划&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;保持现有功能&lt;/li&gt;
-&lt;li&gt;增强用户体验&lt;/li&gt;
-&lt;li&gt;优化构建和部署流程&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;h1 id=&#34;迁移到hugo--papermod&#34;&gt;迁移到Hugo + PaperMod&lt;/h1&gt;&#xA;&lt;p&gt;今天我决定将我的博客系统从Jekyll迁移到Hugo + PaperMod，这是一个重要的技术决策。&lt;/p&gt;&#xA;&lt;h2 id=&#34;为什么选择hugo&#34;&gt;为什么选择Hugo？&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;极快的构建速度&lt;/li&gt;&#xA;&lt;li&gt;简洁的配置&lt;/li&gt;&#xA;&lt;li&gt;强大的主题生态系统&lt;/li&gt;&#xA;&lt;li&gt;更好的多内容类型支持&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;迁移过程&#34;&gt;迁移过程&lt;/h2&gt;&#xA;&lt;p&gt;我们将逐步迁移现有的内容，包括：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;微思录（notes）&lt;/li&gt;&#xA;&lt;li&gt;技术文章（posts）&lt;/li&gt;&#xA;&lt;li&gt;配置和主题&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;未来计划&#34;&gt;未来计划&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;保持现有功能&lt;/li&gt;&#xA;&lt;li&gt;增强用户体验&lt;/li&gt;&#xA;&lt;li&gt;优化构建和部署流程&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
