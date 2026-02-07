@@ -17,9 +17,8 @@ body {
 
 a { color: inherit; }
 
-.site-header, .site-footer {
-  border-bottom: 1px solid var(--line);
-}
+.site-header, .site-footer { border-bottom: 1px solid var(--line); }
+.site-footer { border-top: 1px solid var(--line); }
 
 .site-inner {
   max-width: 980px;
@@ -75,4 +74,3 @@ a { color: inherit; }
 .more { display: inline-block; margin-top: 0.6rem; color: var(--accent); }
 
 .content { line-height: 1.8; }
-.site-footer { border-top: 1px solid var(--line); }

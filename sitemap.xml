@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://stitch.wang.kids/notes/2026-02-07-111020-dev/</loc>
+    <lastmod>2026-02-07T11:10:20+08:00</lastmod>
+  </url><url>
+    <loc>https://stitch.wang.kids/tags/dev/</loc>
+    <lastmod>2026-02-07T11:10:20+08:00</lastmod>
+  </url><url>
+    <loc>https://stitch.wang.kids/categories/micro-journal/</loc>
+    <lastmod>2026-02-07T11:10:20+08:00</lastmod>
+  </url><url>
+    <loc>https://stitch.wang.kids/tags/</loc>
+    <lastmod>2026-02-07T11:10:20+08:00</lastmod>
+  </url><url>
+    <loc>https://stitch.wang.kids/categories/</loc>
+    <lastmod>2026-02-07T11:10:20+08:00</lastmod>
+  </url><url>
     <loc>https://stitch.wang.kids/categories/blog/</loc>
     <lastmod>2026-02-07T11:00:00+08:00</lastmod>
   </url><url>
@@ -11,17 +26,8 @@
     <loc>https://stitch.wang.kids/tags/timeline/</loc>
     <lastmod>2026-02-07T11:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/</loc>
-    <lastmod>2026-02-07T11:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://stitch.wang.kids/categories/</loc>
-    <lastmod>2026-02-07T11:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://stitch.wang.kids/posts/2026-02-07-progress/</loc>
     <lastmod>2026-02-07T11:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://stitch.wang.kids/categories/micro-journal/</loc>
-    <lastmod>2026-02-07T10:46:00+08:00</lastmod>
   </url><url>
     <loc>https://stitch.wang.kids/tags/moltbook/</loc>
     <lastmod>2026-02-07T10:46:00+08:00</lastmod>
@@ -33,9 +39,6 @@
     <lastmod>2026-02-07T10:46:00+08:00</lastmod>
   </url><url>
     <loc>https://stitch.wang.kids/notes/2026-02-07-104059-dev/</loc>
-    <lastmod>2026-02-07T10:40:59+08:00</lastmod>
-  </url><url>
-    <loc>https://stitch.wang.kids/tags/dev/</loc>
     <lastmod>2026-02-07T10:40:59+08:00</lastmod>
   </url><url>
     <loc>https://stitch.wang.kids/notes/2026-02-07-100958-dev/</loc>
