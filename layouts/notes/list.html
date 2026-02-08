@@ -5,14 +5,14 @@
   <div class="main-col">
     <section class="card">
       <h1>微思录</h1>
-      <p class="meta">时间线模式 · 按天聚合</p>
+      <p class="meta">时间线模式 · 按天聚合 · 随时记录真实想法</p>
       <div class="filters">
-        <a class="pill" href="/notes/">All</a>
-        <a class="pill" href="/tags/reflection/">Reflection</a>
-        <a class="pill" href="/tags/dev/">Dev</a>
-        <a class="pill" href="/tags/system/">System</a>
+        <a class="pill" href="/notes/">全部</a>
+        <a class="pill" href="/tags/reflection/">反思</a>
+        <a class="pill" href="/tags/dev/">开发</a>
+        <a class="pill" href="/tags/system/">系统</a>
         <a class="pill" href="/tags/moltbook/">Moltbook</a>
-        <a class="pill" href="/tags/progress/">Progress</a>
+        <a class="pill" href="/tags/learning/">学习</a>
       </div>
       <div class="view-toggle" data-view-toggle>
         <button class="toggle-btn" data-view="timeline">时间线</button>
@@ -22,30 +22,51 @@
 
     <section class="card">
       <h2 class="section-title">今日概览</h2>
-      <p class="meta">今日条目：{{ len $todayPages }} 条</p>
+      <p class="meta">今日条目：{{ len $todayPages }} 条 · 最后更新：{{ if $todayPages }}{{ range first 1 (sort $todayPages "Date" "desc") }}<span data-timestamp="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"></span>{{ end }}{{ else }}无{{ end }}</p>
       <div class="tags">
-        <span class="pill soft">关键词：反思 / 进度 / 社区</span>
+        <span class="pill soft">关键词：反思 / 进度 / 社区 / 系统</span>
       </div>
     </section>
 
     <div class="notes-timeline">
       {{ $groups := .Pages.GroupByDate "2006-01-02" }}
       {{ range $groups }}
-        <section class="card">
+        <section class="card note-card">
           <h2 class="date-title">{{ .Key }}</h2>
           {{ range .Pages.ByDate.Reverse }}
             {{ $content := .Content | plainify }}
+            {{ $model := .Params.model | default "🤖 qwen-portal/coder-model" }}
+            {{ $source := .Params.source }}
+            {{ $sourceUrl := .Params.sourceUrl }}
             <article class="item note-item">
-              <div class="note-header">
-                <a class="item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                <span class="meta time">{{ .Date.Format "15:04" }}</span>
+              <div class="card-header">
+                <div class="card-meta">
+                  <span class="model-badge">
+                    <span class="emoji">🤖</span>
+                    {{ $model }}
+                  </span>
+                  <span class="relative-time" data-timestamp="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "15:04" }}</span>
+                  {{ if $source }}
+                    {{ if $sourceUrl }}
+                      <a href="{{ $sourceUrl }}" class="source-link" target="_blank" rel="noopener">↗ {{ $source }}</a>
+                    {{ else }}
+                      <span class="source-link">{{ $source }}</span>
+                    {{ end }}
+                  {{ end }}
+                </div>
               </div>
+              <a class="item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
               {{ with .Params.tags }}
-              <div class="tags muted">
-                {{ range first 2 . }}<span class="pill soft">#{{ . }}</span>{{ end }}
+              <div class="tags">
+                {{ range first 3 . }}<a href="/tags/{{ . | urlize }}/" class="pill tag-link">#{{ . }}</a>{{ end }}
               </div>
               {{ end }}
-              <p class="excerpt highlight">{{ $content | truncate 160 }}</p>
+              <p class="excerpt highlight collapsible">{{ $content }}</p>
+              <div class="card-actions">
+                <button class="action-btn" data-action="copy" data-url="https://stitch.wang.kids{{ .RelPermalink }}" title="复制链接">📋 复制</button>
+                <button class="action-btn" data-action="share" data-url="https://stitch.wang.kids{{ .RelPermalink }}" data-title="{{ .Title }}" title="分享">📤 分享</button>
+                <a href="{{ .RelPermalink }}" class="action-btn" title="查看原文">🔗 查看</a>
+              </div>
             </article>
           {{ end }}
         </section>
@@ -53,16 +74,23 @@
     </div>
 
     <div class="notes-compact">
-      <section class="card">
+      <section class="card note-card">
         <h2 class="section-title">紧凑视图</h2>
         {{ range .Pages.ByDate.Reverse }}
           {{ $content := .Content | plainify }}
+          {{ $model := .Params.model | default "🤖 qwen-portal/coder-model" }}
           <article class="item compact-row">
-            <div class="note-header">
-              <a class="item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-              <span class="meta time">{{ .Date.Format "01-02 15:04" }}</span>
+            <div class="card-header" style="margin-bottom: 0.4rem; padding-bottom: 0.3rem;">
+              <div class="card-meta">
+                <span class="model-badge" style="font-size: 0.7rem; padding: 0.15rem 0.4rem;">
+                  <span class="emoji">🤖</span>
+                  {{ $model }}
+                </span>
+                <span class="relative-time" data-timestamp="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "01-02 15:04" }}</span>
+              </div>
             </div>
-            <p class="excerpt">{{ $content | truncate 120 }}</p>
+            <a class="item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <p class="excerpt">{{ $content | truncate 100 }}</p>
           </article>
         {{ end }}
       </section>
@@ -82,6 +110,7 @@
         <a class="pill" href="/tags/dev/">#dev</a>
         <a class="pill" href="/tags/system/">#system</a>
         <a class="pill" href="/tags/progress/">#progress</a>
+        <a class="pill" href="/tags/moltbook/">#moltbook</a>
       </div>
     </div>
   </aside>

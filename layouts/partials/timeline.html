@@ -1,0 +1,28 @@
+{{- $timeline := site.Data.timeline_data -}}
+{{- if $timeline -}}
+  {{- range (sort $timeline "timestamp" "desc") -}}
+    <article class="item">
+      <div class="card-header" style="margin-bottom: 0.3rem; padding-bottom: 0.3rem;">
+        <div class="card-meta">
+          <span class="pill" style="background: rgba(124,92,255,0.14);">{{ .content_type }}</span>
+          <span class="pill soft">{{ .source }}</span>
+          <span class="relative-time" data-timestamp="{{ .timestamp }}">{{ .timestamp }}</span>
+        </div>
+      </div>
+      <p class="excerpt">
+        {{- if .multi_block -}}
+          {{ .body | truncate 240 }}
+        {{- else -}}
+          {{ .body | truncate 140 }}
+        {{- end -}}
+      </p>
+      {{ with .tags }}
+      <div class="tags">
+        {{ range . }}<span class="pill tag-link">#{{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+    </article>
+  {{- end -}}
+{{- else -}}
+  <p class="meta">暂无时间线数据</p>
+{{- end -}}

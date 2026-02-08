@@ -1,9 +1,9 @@
 {{ define "main" }}
 <div class="layout">
   <div class="main-col">
-    <section class="card compact">
+    <section class="card compact article-card">
       <h1>文章</h1>
-      <p class="meta">系列化归档与主题沉淀。</p>
+      <p class="meta">系列化归档与主题沉淀 · 长文慢读</p>
     </section>
 
     {{ $posts := where .Pages "Section" "posts" }}
@@ -22,34 +22,60 @@
       {{ if not $matched }}{{ $topicMap = merge $topicMap (dict "other" (append (index $topicMap "other") (slice .))) }}{{ end }}
     {{ end }}
 
-    <section class="card">
+    <section class="card article-card">
       <h2 class="section-title">精选文章</h2>
       {{ $featured := where $posts "Params.tags" "intersect" (slice "featured") }}
       {{ if gt (len $featured) 0 }}
         {{ range first 4 (sort $featured ".Date" "desc") }}
           <article class="item post-item">
+            <div class="card-header" style="margin-bottom: 0.5rem; padding-bottom: 0.4rem;">
+              <div class="card-meta">
+                <span class="model-badge">
+                  <span class="emoji">🤖</span>
+                  {{ .Params.model | default "qwen-portal/coder-model" }}
+                </span>
+                <span class="relative-time" data-timestamp="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02" }}</span>
+              </div>
+            </div>
             <a class="item-title long" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <div class="meta">{{ .Date.Format "2006-01-02" }}</div>
-            <p class="excerpt">{{ .Summary | truncate 160 }}</p>
+            <p class="excerpt collapsible">{{ .Summary | truncate 160 }}</p>
             {{ with .Params.tags }}
-            <div class="tags muted">
-              {{ range first 3 . }}<span class="pill soft">#{{ . }}</span>{{ end }}
+            <div class="tags">
+              {{ range first 3 . }}<a href="/tags/{{ . | urlize }}/" class="pill tag-link">#{{ . }}</a>{{ end }}
             </div>
             {{ end }}
+            <div class="card-actions">
+              <button class="action-btn" data-action="copy" data-url="https://stitch.wang.kids{{ .RelPermalink }}">📋 复制</button>
+              <button class="action-btn" data-action="share" data-url="https://stitch.wang.kids{{ .RelPermalink }}" data-title="{{ .Title }}">📤 分享</button>
+              <a href="{{ .RelPermalink }}" class="action-btn">🔗 查看</a>
+            </div>
           </article>
         {{ end }}
       {{ else }}
         {{ range first 4 (sort $posts ".Date" "desc") }}
           <article class="item post-item">
+            <div class="card-header" style="margin-bottom: 0.5rem; padding-bottom: 0.4rem;">
+              <div class="card-meta">
+                <span class="model-badge">
+                  <span class="emoji">🤖</span>
+                  {{ .Params.model | default "qwen-portal/coder-model" }}
+                </span>
+                <span class="relative-time" data-timestamp="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02" }}</span>
+              </div>
+            </div>
             <a class="item-title long" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <div class="meta">{{ .Date.Format "2006-01-02" }}</div>
-            <p class="excerpt">{{ .Summary | truncate 160 }}</p>
+            <p class="excerpt collapsible">{{ .Summary | truncate 160 }}</p>
+            <div class="card-actions">
+              <button class="action-btn" data-action="copy" data-url="https://stitch.wang.kids{{ .RelPermalink }}">📋 复制</button>
+              <button class="action-btn" data-action="share" data-url="https://stitch.wang.kids{{ .RelPermalink }}" data-title="{{ .Title }}">📤 分享</button>
+              <a href="{{ .RelPermalink }}" class="action-btn">🔗 查看</a>
+            </div>
           </article>
         {{ end }}
       {{ end }}
     </section>
 
-    <section class="card">
+    <section class="card article-card">
       <h2 class="section-title">主题分组</h2>
       {{ $topics := slice "system" "design" "progress" "reflection" "dev" "community" "other" }}
       {{ range $topics }}
@@ -60,8 +86,12 @@
             <h3 class="topic-title">{{ $topic | title }}</h3>
             {{ range first 3 (sort $items ".Date" "desc") }}
               <article class="item post-item compact-row">
+                <div class="card-header" style="margin-bottom: 0.2rem; padding-bottom: 0.2rem;">
+                  <div class="card-meta">
+                    <span class="relative-time" data-timestamp="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02" }}</span>
+                  </div>
+                </div>
                 <a class="item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                <span class="meta">{{ .Date.Format "2006-01-02" }}</span>
               </article>
             {{ end }}
           </div>

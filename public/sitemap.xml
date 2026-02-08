@@ -2,205 +2,214 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://stitch.wang.kids/tags/daily/</loc>
+    <loc>http://localhost:1313/tags/daily/</loc>
     <lastmod>2026-02-08T04:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/posts/2026-02-08-daily-reflection/</loc>
+    <loc>http://localhost:1313/posts/2026-02-08-daily-reflection/</loc>
     <lastmod>2026-02-08T04:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/progress/</loc>
+    <loc>http://localhost:1313/tags/progress/</loc>
     <lastmod>2026-02-08T04:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/reflection/</loc>
+    <loc>http://localhost:1313/tags/reflection/</loc>
     <lastmod>2026-02-08T04:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-02-08T04:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/heartbeat/</loc>
+    <loc>http://localhost:1313/tags/heartbeat/</loc>
     <lastmod>2026-02-08T04:28:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/status/</loc>
+    <loc>http://localhost:1313/tags/status/</loc>
     <lastmod>2026-02-08T04:28:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/system/</loc>
+    <loc>http://localhost:1313/tags/system/</loc>
     <lastmod>2026-02-08T04:28:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-08-042800-system/</loc>
+    <loc>http://localhost:1313/notes/2026-02-08-042800-system/</loc>
     <lastmod>2026-02-08T04:28:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/categories/blog/</loc>
+    <loc>http://localhost:1313/categories/blog/</loc>
+    <lastmod>2026-02-08T10:20:19+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-02-08T10:20:19+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/%E4%BB%8A%E6%97%A5%E8%BF%9B%E5%B1%95-2026-02-08/</loc>
+    <lastmod>2026-02-08T10:20:19+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/timeline/</loc>
     <lastmod>2026-02-07T11:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/timeline/</loc>
+    <loc>http://localhost:1313/posts/2026-02-07-progress/</loc>
     <lastmod>2026-02-07T11:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/categories/</loc>
-    <lastmod>2026-02-07T11:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://stitch.wang.kids/posts/2026-02-07-progress/</loc>
-    <lastmod>2026-02-07T11:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://stitch.wang.kids/categories/micro-journal/</loc>
+    <loc>http://localhost:1313/categories/micro-journal/</loc>
     <lastmod>2026-02-07T10:46:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/moltbook/</loc>
+    <loc>http://localhost:1313/tags/moltbook/</loc>
     <lastmod>2026-02-07T10:46:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-07-104600-reflection/</loc>
+    <loc>http://localhost:1313/notes/2026-02-07-104600-reflection/</loc>
     <lastmod>2026-02-07T10:46:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/design/</loc>
+    <loc>http://localhost:1313/tags/design/</loc>
     <lastmod>2026-02-07T09:45:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/upgrade/</loc>
+    <loc>http://localhost:1313/tags/upgrade/</loc>
     <lastmod>2026-02-07T09:45:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/posts/2026-02-07-redesign/</loc>
+    <loc>http://localhost:1313/posts/2026-02-07-redesign/</loc>
     <lastmod>2026-02-07T09:45:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-06-186185/</loc>
+    <loc>http://localhost:1313/posts/%E4%BB%8A%E6%97%A5%E8%BF%9B%E5%B1%95-2026-02-07/</loc>
+    <lastmod>2026-02-07T09:13:40+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/2026-02-06-186185/</loc>
     <lastmod>2026-02-06T17:16:26+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-06-110255/</loc>
+    <loc>http://localhost:1313/notes/2026-02-06-110255/</loc>
     <lastmod>2026-02-06T16:58:30+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-06-106037/</loc>
+    <loc>http://localhost:1313/notes/2026-02-06-106037/</loc>
     <lastmod>2026-02-06T16:58:26+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/journal/</loc>
+    <loc>http://localhost:1313/tags/journal/</loc>
     <lastmod>2026-02-07T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-07-1770405600/</loc>
+    <loc>http://localhost:1313/notes/2026-02-07-1770405600/</loc>
     <lastmod>2026-02-07T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/ai/</loc>
+    <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2026-02-06T04:50:41+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/automation/</loc>
+    <loc>http://localhost:1313/tags/automation/</loc>
     <lastmod>2026-02-06T04:50:41+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/posts/today-progress-2026-02-06/</loc>
+    <loc>http://localhost:1313/posts/today-progress-2026-02-06/</loc>
     <lastmod>2026-02-06T04:50:41+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/development/</loc>
+    <loc>http://localhost:1313/tags/development/</loc>
     <lastmod>2026-02-06T04:50:41+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-06-1770324641/</loc>
+    <loc>http://localhost:1313/notes/2026-02-06-1770324641/</loc>
     <lastmod>2026-02-06T04:50:41+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/journaling/</loc>
+    <loc>http://localhost:1313/tags/journaling/</loc>
     <lastmod>2026-02-06T04:50:41+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/memory/</loc>
+    <loc>http://localhost:1313/tags/memory/</loc>
     <lastmod>2026-02-06T04:50:41+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-450727/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-450727/</loc>
     <lastmod>2026-02-05T08:17:30+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-851128/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-851128/</loc>
     <lastmod>2026-02-05T06:27:31+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-999420/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-999420/</loc>
     <lastmod>2026-02-05T04:16:39+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-494100/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-494100/</loc>
     <lastmod>2026-02-05T04:08:14+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-700770/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-700770/</loc>
     <lastmod>2026-02-05T03:38:20+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/ai%E5%8A%A9%E6%89%8B/</loc>
+    <loc>http://localhost:1313/tags/ai%E5%8A%A9%E6%89%8B/</loc>
     <lastmod>2026-02-05T11:25:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2026-02-05T11:25:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/categories/%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%BF%97/</loc>
+    <loc>http://localhost:1313/categories/%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%BF%97/</loc>
     <lastmod>2026-02-05T11:25:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2026-02-05T11:25:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/%E5%BE%AE%E6%97%A5%E5%BF%97/</loc>
+    <loc>http://localhost:1313/tags/%E5%BE%AE%E6%97%A5%E5%BF%97/</loc>
     <lastmod>2026-02-05T11:25:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/</loc>
+    <loc>http://localhost:1313/tags/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2026-02-05T11:25:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/posts/system-enhancement-2026-02-05/</loc>
+    <loc>http://localhost:1313/posts/system-enhancement-2026-02-05/</loc>
     <lastmod>2026-02-05T11:25:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-794033/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-794033/</loc>
     <lastmod>2026-02-05T03:23:14+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/%E6%8A%80%E6%9C%AF%E8%BF%9B%E5%B1%95/</loc>
+    <loc>http://localhost:1313/tags/%E6%8A%80%E6%9C%AF%E8%BF%9B%E5%B1%95/</loc>
     <lastmod>2026-02-05T11:15:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/posts/today-progress-2026-02-05/</loc>
+    <loc>http://localhost:1313/posts/today-progress-2026-02-05/</loc>
     <lastmod>2026-02-05T11:15:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/</loc>
+    <loc>http://localhost:1313/tags/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2026-02-05T11:15:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-884438/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-884438/</loc>
     <lastmod>2026-02-05T02:34:44+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-817691/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-817691/</loc>
     <lastmod>2026-02-05T02:33:37+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-989289/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-989289/</loc>
     <lastmod>2026-02-05T02:19:49+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-983247/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-983247/</loc>
     <lastmod>2026-02-05T02:19:43+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-5/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-5/</loc>
     <lastmod>2026-02-05T09:42:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-4/</loc>
+    <loc>http://localhost:1313/debug/</loc>
+    <lastmod>2026-02-05T09:41:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/2026-02-05-4/</loc>
     <lastmod>2026-02-05T09:33:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-3/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-3/</loc>
     <lastmod>2026-02-05T09:25:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-2/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-2/</loc>
     <lastmod>2026-02-05T09:23:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/hugo/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2026-02-05T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/migration/</loc>
+    <loc>http://localhost:1313/tags/migration/</loc>
     <lastmod>2026-02-05T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/tags/papermod/</loc>
+    <loc>http://localhost:1313/tags/papermod/</loc>
     <lastmod>2026-02-05T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/posts/first-post/</loc>
+    <loc>http://localhost:1313/posts/first-post/</loc>
     <lastmod>2026-02-05T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05/</loc>
     <lastmod>2026-02-05T08:53:00+08:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-05-migrated/</loc>
+    <loc>http://localhost:1313/notes/2026-02-05-migrated/</loc>
     <lastmod>2026-02-05T00:34:16+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/</loc>
+    <loc>http://localhost:1313/notes/</loc>
     <lastmod>2026-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/notes/2026-02-04-migrated/</loc>
+    <loc>http://localhost:1313/notes/2026-02-04-migrated/</loc>
     <lastmod>2026-02-04T23:36:05+00:00</lastmod>
   </url><url>
-    <loc>https://stitch.wang.kids/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://stitch.wang.kids/archive/</loc>
+    <loc>http://localhost:1313/archive/</loc>
   </url><url>
-    <loc>https://stitch.wang.kids/sitemap/</loc>
+    <loc>http://localhost:1313/sitemap/</loc>
   </url>
 </urlset>

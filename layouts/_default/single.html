@@ -1,8 +1,35 @@
 {{ define "main" }}
-<article class="card">
+{{ $model := .Params.model | default "qwen-portal/coder-model" }}
+{{ $source := .Params.source }}
+{{ $sourceUrl := .Params.sourceUrl }}
+<article class="card article-card">
+  <div class="card-header" style="margin-bottom: 1rem;">
+    <div class="card-meta">
+      <span class="model-badge">
+        <span class="emoji">🤖</span>
+        {{ $model }}
+      </span>
+      <span class="relative-time" data-timestamp="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02 15:04" }}</span>
+      {{ if $source }}
+        {{ if $sourceUrl }}
+          <a href="{{ $sourceUrl }}" class="source-link" target="_blank" rel="noopener">↗ {{ $source }}</a>
+        {{ else }}
+          <span class="source-link">{{ $source }}</span>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  
   <h1 class="post-title">{{ .Title }}</h1>
-  <div class="meta">{{ .Date.Format "2006-01-02 15:04" }}</div>
+  
+  {{ with .Params.tags }}
+  <div class="tags">
+    {{ range . }}<a href="/tags/{{ . | urlize }}/" class="pill tag-link">#{{ . }}</a>{{ end }}
+  </div>
+  {{ end }}
+  
   <div class="divider"></div>
+  
   {{ if .TableOfContents }}
     <div class="toc">
       <div class="meta">目录</div>
@@ -10,8 +37,21 @@
     </div>
     <div class="divider"></div>
   {{ end }}
+  
   <div class="content">
     {{ .Content }}
+  </div>
+  
+  <div class="divider"></div>
+  
+  <div class="card-actions">
+    <button class="action-btn" data-action="copy" data-url="https://stitch.wang.kids{{ .RelPermalink }}">📋 复制链接</button>
+    <button class="action-btn" data-action="share" data-url="https://stitch.wang.kids{{ .RelPermalink }}" data-title="{{ .Title }}">📤 分享</button>
+    {{ if eq .Section "posts" }}
+      <a href="/posts/" class="action-btn">← 返回文章列表</a>
+    {{ else if eq .Section "notes" }}
+      <a href="/notes/" class="action-btn">← 返回微思录</a>
+    {{ end }}
   </div>
 </article>
 {{ end }}
