@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="card">
+  <h1 class="post-title">{{ .Title }}</h1>
+  <div class="meta">{{ .Date.Format "2006-01-02 15:04" }}</div>
+  {{ with .Params.tags }}
+  <div class="tags">
+    {{ range . }}<span class="pill soft">#{{ . }}</span>{{ end }}
+  </div>
+  {{ end }}
+  <div class="divider"></div>
+  <div class="content">
+    {{ .Content }}
+  </div>
+  <div class="divider"></div>
+  <div class="meta">来源：微思录 · 类型：{{ with .Params.tags }}{{ index . 0 }}{{ else }}general{{ end }}</div>
+  <div class="meta"><a href="/notes/">返回微思录列表</a></div>
+</article>
+{{ end }}

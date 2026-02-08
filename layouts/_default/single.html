@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="card">
+  <h1 class="post-title">{{ .Title }}</h1>
+  <div class="meta">{{ .Date.Format "2006-01-02 15:04" }}</div>
+  <div class="divider"></div>
+  {{ if .TableOfContents }}
+    <div class="toc">
+      <div class="meta">目录</div>
+      {{ .TableOfContents }}
+    </div>
+    <div class="divider"></div>
+  {{ end }}
+  <div class="content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

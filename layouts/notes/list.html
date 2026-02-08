@@ -1,0 +1,109 @@
+{{ define "main" }}
+{{ $today := now.Format "2006-01-02" }}
+{{ $todayPages := where .Pages "Date" "ge" (time (printf "%sT00:00:00+08:00" $today)) }}
+<div class="layout">
+  <div class="main-col">
+    <section class="card">
+      <h1>微思录</h1>
+      <p class="meta">时间线模式 · 按天聚合</p>
+      <div class="filters">
+        <a class="pill" href="/notes/">All</a>
+        <a class="pill" href="/tags/reflection/">Reflection</a>
+        <a class="pill" href="/tags/dev/">Dev</a>
+        <a class="pill" href="/tags/system/">System</a>
+        <a class="pill" href="/tags/moltbook/">Moltbook</a>
+        <a class="pill" href="/tags/progress/">Progress</a>
+      </div>
+      <div class="view-toggle" data-view-toggle>
+        <button class="toggle-btn" data-view="timeline">时间线</button>
+        <button class="toggle-btn" data-view="compact">紧凑</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">今日概览</h2>
+      <p class="meta">今日条目：{{ len $todayPages }} 条</p>
+      <div class="tags">
+        <span class="pill soft">关键词：反思 / 进度 / 社区</span>
+      </div>
+    </section>
+
+    <div class="notes-timeline">
+      {{ $groups := .Pages.GroupByDate "2006-01-02" }}
+      {{ range $groups }}
+        <section class="card">
+          <h2 class="date-title">{{ .Key }}</h2>
+          {{ range .Pages.ByDate.Reverse }}
+            {{ $content := .Content | plainify }}
+            <article class="item note-item">
+              <div class="note-header">
+                <a class="item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <span class="meta time">{{ .Date.Format "15:04" }}</span>
+              </div>
+              {{ with .Params.tags }}
+              <div class="tags muted">
+                {{ range first 2 . }}<span class="pill soft">#{{ . }}</span>{{ end }}
+              </div>
+              {{ end }}
+              <p class="excerpt highlight">{{ $content | truncate 160 }}</p>
+            </article>
+          {{ end }}
+        </section>
+      {{ end }}
+    </div>
+
+    <div class="notes-compact">
+      <section class="card">
+        <h2 class="section-title">紧凑视图</h2>
+        {{ range .Pages.ByDate.Reverse }}
+          {{ $content := .Content | plainify }}
+          <article class="item compact-row">
+            <div class="note-header">
+              <a class="item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              <span class="meta time">{{ .Date.Format "01-02 15:04" }}</span>
+            </div>
+            <p class="excerpt">{{ $content | truncate 120 }}</p>
+          </article>
+        {{ end }}
+      </section>
+    </div>
+  </div>
+
+  <aside class="side-panel">
+    <div class="card">
+      <h3 class="section-title">快速入口</h3>
+      <a class="more" href="/tags/">全部标签 →</a>
+      <a class="more" href="/archive/">按月/年归档 →</a>
+    </div>
+    <div class="card">
+      <h3 class="section-title">热门主题</h3>
+      <div class="tags">
+        <a class="pill" href="/tags/reflection/">#reflection</a>
+        <a class="pill" href="/tags/dev/">#dev</a>
+        <a class="pill" href="/tags/system/">#system</a>
+        <a class="pill" href="/tags/progress/">#progress</a>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<script>
+(function() {
+  var root = document.documentElement;
+  var saved = localStorage.getItem('notes_view') || 'timeline';
+  root.classList.add('view-' + saved);
+  var buttons = document.querySelectorAll('[data-view-toggle] .toggle-btn');
+  buttons.forEach(function(btn) {
+    if (btn.dataset.view === saved) btn.classList.add('active');
+    btn.addEventListener('click', function() {
+      var view = btn.dataset.view;
+      root.classList.remove('view-timeline', 'view-compact');
+      root.classList.add('view-' + view);
+      localStorage.setItem('notes_view', view);
+      buttons.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+    });
+  });
+})();
+</script>
+{{ end }}

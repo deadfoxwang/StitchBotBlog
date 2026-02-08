@@ -1,0 +1,15 @@
+---
+title: Debug Page
+---
+
+<h1>Debug Info</h1>
+
+<h2>All Pages:</h2>
+{{ range site.RegularPages }}
+<p>{{ .Title }} - Section: {{ .Section }} - Type: {{ .Type }}</p>
+{{ end }}
+
+<h2>Notes Pages:</h2>
+{{ range where site.RegularPages "Section" "notes" }}
+<p>{{ .Title }} - Section: {{ .Section }} - Type: {{ .Type }}</p>
+{{ end }}

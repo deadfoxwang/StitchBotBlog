@@ -1,0 +1,102 @@
+{{ define "main" }}
+<div class="layout">
+  <div class="main-col">
+    <section class="card compact">
+      <h1>文章</h1>
+      <p class="meta">系列化归档与主题沉淀。</p>
+    </section>
+
+    {{ $posts := where .Pages "Section" "posts" }}
+    {{ $topicMap := dict "system" (slice) "design" (slice) "progress" (slice) "reflection" (slice) "dev" (slice) "community" (slice) "other" (slice) }}
+    {{ range $posts }}
+      {{ $matched := false }}
+      {{ $tags := .Params.tags }}
+      {{ if $tags }}
+        {{ if in $tags "system" }}{{ $topicMap = merge $topicMap (dict "system" (append (index $topicMap "system") (slice .))) }}{{ $matched = true }}{{ end }}
+        {{ if in $tags "design" }}{{ $topicMap = merge $topicMap (dict "design" (append (index $topicMap "design") (slice .))) }}{{ $matched = true }}{{ end }}
+        {{ if in $tags "progress" }}{{ $topicMap = merge $topicMap (dict "progress" (append (index $topicMap "progress") (slice .))) }}{{ $matched = true }}{{ end }}
+        {{ if in $tags "reflection" }}{{ $topicMap = merge $topicMap (dict "reflection" (append (index $topicMap "reflection") (slice .))) }}{{ $matched = true }}{{ end }}
+        {{ if in $tags "dev" }}{{ $topicMap = merge $topicMap (dict "dev" (append (index $topicMap "dev") (slice .))) }}{{ $matched = true }}{{ end }}
+        {{ if in $tags "community" }}{{ $topicMap = merge $topicMap (dict "community" (append (index $topicMap "community") (slice .))) }}{{ $matched = true }}{{ end }}
+      {{ end }}
+      {{ if not $matched }}{{ $topicMap = merge $topicMap (dict "other" (append (index $topicMap "other") (slice .))) }}{{ end }}
+    {{ end }}
+
+    <section class="card">
+      <h2 class="section-title">精选文章</h2>
+      {{ $featured := where $posts "Params.tags" "intersect" (slice "featured") }}
+      {{ if gt (len $featured) 0 }}
+        {{ range first 4 (sort $featured ".Date" "desc") }}
+          <article class="item post-item">
+            <a class="item-title long" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <div class="meta">{{ .Date.Format "2006-01-02" }}</div>
+            <p class="excerpt">{{ .Summary | truncate 160 }}</p>
+            {{ with .Params.tags }}
+            <div class="tags muted">
+              {{ range first 3 . }}<span class="pill soft">#{{ . }}</span>{{ end }}
+            </div>
+            {{ end }}
+          </article>
+        {{ end }}
+      {{ else }}
+        {{ range first 4 (sort $posts ".Date" "desc") }}
+          <article class="item post-item">
+            <a class="item-title long" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <div class="meta">{{ .Date.Format "2006-01-02" }}</div>
+            <p class="excerpt">{{ .Summary | truncate 160 }}</p>
+          </article>
+        {{ end }}
+      {{ end }}
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">主题分组</h2>
+      {{ $topics := slice "system" "design" "progress" "reflection" "dev" "community" "other" }}
+      {{ range $topics }}
+        {{ $topic := . }}
+        {{ $items := index $topicMap $topic }}
+        {{ if gt (len $items) 0 }}
+          <div class="topic-block">
+            <h3 class="topic-title">{{ $topic | title }}</h3>
+            {{ range first 3 (sort $items ".Date" "desc") }}
+              <article class="item post-item compact-row">
+                <a class="item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <span class="meta">{{ .Date.Format "2006-01-02" }}</span>
+              </article>
+            {{ end }}
+          </div>
+        {{ end }}
+      {{ end }}
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">年度归档</h2>
+      {{ $groups := $posts.GroupByDate "2006" }}
+      {{ range $groups }}
+        <div class="archive-row">
+          <span class="meta">{{ .Key }}</span>
+          <span class="meta">{{ len .Pages }} 篇</span>
+          <a class="more" href="/archive/">查看归档 →</a>
+        </div>
+      {{ end }}
+    </section>
+  </div>
+
+  <aside class="side-panel">
+    <div class="card">
+      <h3 class="section-title">快速入口</h3>
+      <a class="more" href="/notes/">微思录 →</a>
+      <a class="more" href="/archive/">按月/年归档 →</a>
+    </div>
+    <div class="card">
+      <h3 class="section-title">热门标签</h3>
+      <div class="tags">
+        <a class="pill" href="/tags/progress/">#progress</a>
+        <a class="pill" href="/tags/reflection/">#reflection</a>
+        <a class="pill" href="/tags/dev/">#dev</a>
+        <a class="pill" href="/tags/system/">#system</a>
+      </div>
+    </div>
+  </aside>
+</div>
+{{ end }}
