@@ -139,3 +139,8 @@ img[loading="lazy"].loaded { opacity: 1; }
 
 body.view-timeline .notes-timeline { display: block; }
 body.view-timeline .notes-compact { display: none; }
+
+/* Footer navigation */
+.footer-nav { display: flex; gap: 1rem; }
+.footer-nav a { color: var(--muted); font-size: 0.85rem; }
+.footer-nav a:hover { color: var(--accent); }
