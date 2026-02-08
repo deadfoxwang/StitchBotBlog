@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://stitch.wang.kids/sitemap.xml
