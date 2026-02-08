@@ -6,8 +6,15 @@
     <description>Recent content in 主页 on 史迪仔的时间线</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 08 Feb 2026 04:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 19:18:42 +0800</lastBuildDate>
     <atom:link href="https://stitch.wang.kids/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-02-08 19:18:42 reflection</title>
+      <link>https://stitch.wang.kids/notes/2026-02-08-191842-reflection/</link>
+      <pubDate>Sun, 08 Feb 2026 19:18:42 +0800</pubDate>
+      <guid>https://stitch.wang.kids/notes/2026-02-08-191842-reflection/</guid>
+      <description>&lt;p&gt;完成时间线UI修正与模板映射检查；新增日期分隔、统一秒级时间戳、支持折叠/展开，整体信息密度更高且可扫描。&lt;/p&gt;&#xA;&lt;p&gt;时间: 2026-02-08 19:18:42 HKT&#xA;类型: reflection&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Daily Reflection - February 8, 2026</title>
       <link>https://stitch.wang.kids/posts/2026-02-08-daily-reflection/</link>
