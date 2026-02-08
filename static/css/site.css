@@ -267,3 +267,104 @@ img[loading="lazy"].loaded { opacity: 1; }
 .footer-nav { display: flex; gap: 1rem; }
 .footer-nav a { color: var(--muted); font-size: 0.85rem; }
 .footer-nav a:hover { color: var(--accent); }
+/* Timeline v2 */
+.timeline-separator {
+  margin: 1.2rem 0 0.6rem;
+  font-size: 0.8rem;
+  color: #a78bfa;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-left: 2px solid rgba(124,92,255,0.6);
+  padding-left: 0.6rem;
+}
+
+.timeline-item {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid rgba(124,92,255,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.timeline-item.multi-block {
+  border-left: 2px solid rgba(124,92,255,0.35);
+  padding-left: 0.8rem;
+  background: linear-gradient(90deg, rgba(124,92,255,0.06), transparent 40%);
+}
+
+.timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.72rem;
+}
+
+.type-badge, .source-badge {
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: rgba(124,92,255,0.14);
+  color: #b7a6ff;
+  font-size: 0.7rem;
+}
+
+.source-badge {
+  background: rgba(36,210,255,0.12);
+  color: #8fdfff;
+}
+
+.timestamp {
+  color: #a1a6b3;
+  font-family: "SF Mono", Monaco, monospace;
+}
+
+.entry-body {
+  color: #e6e9ef;
+  line-height: 1.65;
+}
+
+.entry-body p { margin: 0 0 0.6rem 0; }
+
+.entry-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  font-size: 0.72rem;
+}
+
+.source-text {
+  color: #7b8190;
+}
+
+.expand-btn {
+  align-self: flex-start;
+  background: transparent;
+  border: 1px solid rgba(124,92,255,0.3);
+  color: #b7a6ff;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.timeline-item.collapsed .entry-body {
+  max-height: 5.2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.timeline-item.collapsed .entry-body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2rem;
+  background: linear-gradient(to bottom, rgba(15,17,21,0), rgba(15,17,21,1));
+}
+
+@media (max-width: 720px) {
+  .entry-footer { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+  .timestamp { font-size: 0.68rem; }
+}

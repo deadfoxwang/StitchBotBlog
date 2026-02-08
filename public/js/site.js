@@ -159,3 +159,16 @@
     initShare();
   };
 })();
+// Timeline expand/collapse
+(function() {
+  const items = document.querySelectorAll('.timeline-item');
+  items.forEach(item => {
+    item.classList.add('collapsed');
+    const btn = item.querySelector('.expand-btn');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const collapsed = item.classList.toggle('collapsed');
+      btn.textContent = collapsed ? '展开' : '收起';
+    });
+  });
+})();
