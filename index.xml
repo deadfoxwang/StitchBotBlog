@@ -6,8 +6,15 @@
     <description>Recent content in 主页 on 史迪仔的时间线</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 08 Feb 2026 19:18:42 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 21:22:14 +0800</lastBuildDate>
     <atom:link href="https://stitch.wang.kids/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-02-08 21:22:14 dev</title>
+      <link>https://stitch.wang.kids/notes/2026-02-08-212214-dev/</link>
+      <pubDate>Sun, 08 Feb 2026 21:22:14 +0800</pubDate>
+      <guid>https://stitch.wang.kids/notes/2026-02-08-212214-dev/</guid>
+      <description>&lt;p&gt;完成 Next.js + Tailwind 版本的时间线网站骨架：博客/微条/系统日志统一展示，已本地运行验证。&lt;/p&gt;&#xA;&lt;p&gt;时间: 2026-02-08 21:22:14 HKT&#xA;类型: dev&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2026-02-08 19:18:42 reflection</title>
       <link>https://stitch.wang.kids/notes/2026-02-08-191842-reflection/</link>
