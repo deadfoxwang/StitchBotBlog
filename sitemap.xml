@@ -200,5 +200,7 @@
     <loc>https://stitch.wang.kids/about/</loc>
   </url><url>
     <loc>https://stitch.wang.kids/archive/</loc>
+  </url><url>
+    <loc>https://stitch.wang.kids/sitemap/</loc>
   </url>
 </urlset>
